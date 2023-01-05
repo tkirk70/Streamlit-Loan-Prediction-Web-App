@@ -14,7 +14,7 @@ model=pkl.load(open("model.p","rb"))
 
 st.set_page_config(
     page_title="Loan Prediction App",
-    page_icon="/Users/mariia/Desktop/AWS/loan.png"
+    page_icon="loan.png"
 )
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -30,7 +30,7 @@ st.subheader("Are you sure your loan applicant is surely going to pay the loan b
 col1, col2 = st.columns([1, 1])
 
 with col1:
-    st.image("/Users/mariia/Desktop/AWS/loan.png")
+    st.image("loan.png")
 
 with col2:
     st.write("""To borrow money, credit analysis is performed. Credit analysis involves the measure to investigate
@@ -55,7 +55,7 @@ st.subheader("Below you could find prediction result: ")
 ######################
 
 st.sidebar.title("Loan Applicant Info")
-st.sidebar.image("/Users/mariia/Desktop/AWS/ab.png", width=100)
+st.sidebar.image("ab.png", width=100)
 st.sidebar.write("Please choose parameters that descibe the applicant")
 
 #input features
