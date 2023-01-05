@@ -117,7 +117,7 @@ if btn_predict:
         st.success('It is green! The aplicant has a high probability to pay the loan back!')
 
     #prepare test set for shap explainability
-    loans = st.cache(pd.read_csv)("archive%20(2).zip/mycsvfile.csv")
+    loans = st.cache(pd.read_csv)("archive 2(2).zip/mycsvfile.csv")
     X = loans.drop(columns=['loan_status','home_ownership__ANY','home_ownership__MORTGAGE','home_ownership__NONE','home_ownership__OTHER','home_ownership__OWN',
                    'home_ownership__RENT','addr_state__AK','addr_state__AL','addr_state__AR','addr_state__AZ','addr_state__CA','addr_state__CO','addr_state__CT',
                    'addr_state__DC','addr_state__DE','addr_state__FL','addr_state__GA','addr_state__HI','addr_state__ID','addr_state__IL','addr_state__IN',
